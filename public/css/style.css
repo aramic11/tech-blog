@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #211aeb;
+    --background-color: #000000;
+    --text-color: white;
+}
+
+#loginForm {
+    margin-bottom: 20px
+}
+
+#registerForm, #loginForm {
+    display: none;
+}
+
+#registerForm input, #loginForm input {
+    color: var(--background-color);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
