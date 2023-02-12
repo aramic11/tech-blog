@@ -1,0 +1,30 @@
+{{#each posts as |post| }}
+<div class="postContainer">
+  <div class="postHeader">
+    <div class="postTitle col-12">
+      <h6>{{post.title}}</h6>
+      <span>Posted by {{post.user.username}} on {{format_date post.updatedAt}}</span>
+    </div>
+    <div class="postContent col-12">
+      <h2 class='content' data-postid="{{post.id}}">{{post.content}}</h2>
+    </div>
+  </div>
+
+  <form class="commentContainer hidden col-12">
+    <input class='inputBox' type="text" placeholder="comment">
+    <button class='addCommentBtn' data-postid="{{post.id}}" type="submit">Comment</button>
+  </form>
+
+
+  {{#each post.comments as |comment|}}
+  <div class='commentStyle col-12'>
+    <p class="commentText">{{comment.comment}}</p>
+    <p class="commentInfo">Commented by {{comment.user.username}} on <span>{{format_date comment.updatedAt}}</span></p>
+  </div>
+  {{/each}}
+</div>
+{{/each}}
+
+{{#if logged_in}}
+<script src="/js/homepage.js"></script>
+{{/if}}
