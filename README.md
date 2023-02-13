@@ -12,6 +12,7 @@ In the terminal type npm i to install your dependencies, then type mysql -uroot 
 
 ## Screenshot
 
+![techblog](https://user-images.githubusercontent.com/113563367/218360104-52829730-1781-42ef-8b12-38cb48cb3d6b.png)
 
 
 
