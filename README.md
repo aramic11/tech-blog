@@ -19,4 +19,4 @@ In the terminal type npm i to install your dependencies, then type mysql -uroot 
 ## Links
 
 Github repo: https://github.com/aramic11/tech-blog
-Online website: 
+Online website: https://tech-blog12.herokuapp.com/
